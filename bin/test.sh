@@ -22,6 +22,7 @@ while getopts ":dp" opt; do
           else
             docker-compose run --name test-api --entrypoint /code/bin/test-entrypoint.sh   --rm
           fi
+          ;;
         *)
           usage
           ;;
